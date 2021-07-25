@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="first.css">
+</head>
+<body>
+
+	<center>
+	<div class="example">
+	Enter Email-id : <input type="Email-id" name="text" placeholder="Enter Email-Id Here" onclick="validation()">
+	<br><br>
+	Enter Mobile No : <input type="Mobile" name="mobno" placeholder="Enter Mobile No. Here" >
+	<br><br>
+	<form>
+	<input type="button" name="submit" value="SUBMIT" onclick="showmessage()">
+    </form>
+    </div>
+    </center>
+    
+    <script type="text/javascript">
+    	function showmessage(){
+    		alert("your information is saved");
+    	}
+
+    	function validation(){
+    		var reg = /^([A-Za-z0-9])+\@([A-Za-z0-9])$/;
+    		if (reg.test(email)==false) {
+    		alert("you have entered invalid Email-id");
+    		return(false);
+    	}
+    }
+    </script>
+
+    
+    <header>
+    	<div class="next">
+    		<ul><a href="website_youtube.html">NEXT</a></ul>
+    	</div>
+    </header>
+
+</body>
+</html>
