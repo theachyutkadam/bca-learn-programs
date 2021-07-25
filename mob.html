@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function valid() {
+			var a=document.getElementById('uname').value;
+			var b=document.getElementById('mob').value;
+			var re1=/[a-z A-Z]/;
+			var re2=/[0-9]/;
+			var str="";
+			if(a.search(re1)==-1)
+				alert("username must contain alphabets");
+			else
+				str="username:  "+a;
+			if(b.search(re2)==-1)
+				alert("mobile number must be digit");
+			else if(b.length!=10)
+				alert("mobile number must be 10 digit");
+			else str=str+"   "+"mobile no.:  "+b;
+			document.write(str);
+		}
+	</script>
+</head>
+<body> 
+	<form>
+		Enter username:<input type="text" id="uname" name="uname"><br><br>
+		Enter user mobile number:<input type="number"  id="mob" name="mob"><br><br>
+		<input type="button" onclick="valid()" value="check validation">&nbsp;<br><br>
+	</form>
+</body>
+</html>

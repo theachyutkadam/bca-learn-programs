@@ -1,0 +1,17 @@
+<html>
+<head>
+	<script>
+		var numbers=[1,2,3,4,5,6,7,67,-3];
+		var a=math.max.apply(null,numbers)
+		var b=math.min.apply(null,numbers)
+		document.write("maximum="+a+"</br>");
+		document.write("manimum="+b+"</br>");
+		function getsum(total,num)
+		 {
+			return = total+num;
+		}
+		var c=numbers.reduce(getsum);
+		document.write("sum="+c);
+	</script>
+</head>
+</html>

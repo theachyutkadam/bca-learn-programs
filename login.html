@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="text" name="username" placeholder ="Enter text" id="username"><br><br>
+    <input type="password" name="password" placeholder ="Enter password" id="password"><br></br>
+    <input type="button" name="submit" value="submit" onclick="validation()" >&nbsp;
+    <input type="button" name="clear" value="clear" id="clear">
+  </body>
+</html>
+<script type="text/javascript">
+  function validation() {
+    var username = ("$username").val();
+    var username = document.getElementById("username").value;
+    
+    if (username == "") {
+      alert("texting")   
+    }
+  }
+</script>

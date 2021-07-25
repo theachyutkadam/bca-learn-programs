@@ -1,0 +1,26 @@
+
+<html>
+<script>
+    function Validate() 
+    {
+
+        var password = document.getElementById("txtpassword").value;
+        var confirmPassword = document.getElementById("txtconfirmPassword").value;
+        if (password != confirmPassword) 
+        {
+            alert("Passwords do not match.");
+        }
+        else
+        {
+            alert("password is matched");
+        }
+    }
+</script>
+  <body>
+    <input type="password" name="password" placeholder ="Enter Password" id="txtpassword"><br></br>
+    <input type="password" name="confirmpassword" placeholder ="confirm Password" id="txtconfirmpassword"><br></br>
+    <input type="button" name="submit" value="submit" onclick="Validate()">
+    <input type="button" name="clear" value="clear" id="clear"><br><br>
+  </body>
+  </html>
+

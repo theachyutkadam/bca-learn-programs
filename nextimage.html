@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var image = new array(4);
+		images[0]="C:\Users\anjal\OneDrive\Pictures\Saved Pictures";
+		images[1]="C:\Users\anjal\OneDrive\Pictures\Saved Pictures";
+		images[2]="C:\Users\anjal\OneDrive\Pictures\Saved Pictures";
+		images[3]="C:\Users\anjal\OneDrive\Pictures\Saved Pictures";
+		var numimg=4;
+		var curimg=0;
+		function goback() {
+			var im=document.getElementById('images');
+			if (curimg>0) {
+				im.src=images[curimg-1];
+				curimg=curimg-1;
+			}
+		else
+		{
+			alert("this is the first page");
+
+		}
+		}
+		function gofwd()
+		{
+			var im=document.getElementById('images');
+			if (curimg<numimg) {
+				im.src=images[curimg+1];
+				curimg=curimg+1;
+
+			}
+			else
+			{
+				alert("this is the last image");
+			}
+		}
+	</script>
+</head>
+<body>
+	<div style="border: solid 12px blue; width: 500px; height: 500px;">
+		<img src="" alt="lab1" height="500" width="500" id="images">
+	</div>
+<br>
+    <input type="button" value="previous" name="prev" onclick="goback();">
+    <input type="button" value="next" name="next" onclick="gofwd();">
+
+</body>
+</html>
